@@ -1,0 +1,69 @@
+<idea-plugin>
+    <id>com.will.plugin.id</id>
+    <name>Mvvm-Helper</name>
+    <version>1.0.0</version>
+    <vendor email="545512533@qq.com">will</vendor>
+
+    <description>
+        Android MvvM fast plug-in generation.
+
+        https://github.com/lckj686/ImageStorage/blob/master/123456.png
+    </description>
+
+    <change-notes>
+        https://github.com/lckj686/ImageStorage/blob/master/123456.png
+    </change-notes>
+
+    <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/build_number_ranges.html for description -->
+    <idea-version since-build="145.0"/>
+
+
+    <extensions defaultExtensionNs="com.intellij">
+        <!-- Add your extensions here -->
+    </extensions>
+
+    <actions>
+
+        <group id="willGroup" text="will" popup="true" icon="/icons/ic_yu.png">
+            <add-to-group group-id="NewGroup" anchor="first"/>
+            <action id="com.will.SelectorAction"
+                    class="com.will.mvvmplug.menu.SelectorAction"
+                    text="Create Selector"
+                    icon="/icons/ic_yu.png"
+                    description="Create Selector"/>
+
+            <action id="com.will.MwillmActivityAction"
+                    class="com.will.mvvmplug.menu.MvvmActivityAction"
+                    text="Mwillm Activity"
+                    icon="/icons/ic_yu.png"
+                    description="Create Mwillm Activity"/>
+
+            <action id="com.will.MwillmFragmentAction" class="com.will.mvvmplug.menu.MvvmFragmentAction" text="Mwillm Fragment"
+                    icon="/icons/ic_yu.png"/>
+
+            <action id="com.will.MwillmDialogFragmentAction" class="com.will.mvvmplug.menu.MvvmDialogFragmentAction"
+                    text="Mwillm Dialog "
+                    icon="/icons/ic_yu.jpg"/>
+
+            <action id="com.will.MwillmRecycleActivityAction" class="com.will.mvvmplug.menu.MvvmRecycleActivityAction"
+                    text="Mwillm Recycler Activity "
+                    icon="/icons/ic_yu.png"/>
+
+            <action id="com.will.ToolsAction" class="com.will.mvvmplug.menu.ToolsAction" text="小工具"
+                    icon="/icons/ic_yu.jpg"/>
+
+            <action id="com.will.findFile" class="com.will.mvvmplug.menu.ToolsFindFileAction" text="find big file"
+                    icon="/icons/ic_yu.png"/>
+        </group>
+
+        <group id="willGroupTool" text="willtools" popup="true" icon="/icons/ic_yu.png">
+            <add-to-group group-id="ToolsMenu" anchor="first"/>
+            <action id="com.will.ToolsAction2" class="com.will.mvvmplug.menu.ToolsAction" text="小工具" description="小工具"
+                    icon="/icons/ic_yu.png"/>
+            <action id="com.will.findFile2" class="com.will.mvvmplug.menu.ToolsFindFileAction" text="find big file"
+                    icon="/icons/ic_yu.png"/>
+        </group>
+
+    </actions>
+
+</idea-plugin>
